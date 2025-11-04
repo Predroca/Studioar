@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name = "description" content = "Ar: Studio de Pilates">
+    <meta name = "keywords" content = "studio, pilates, ar">
+    <meta name = "author" content = "Arthur Leonnardo, Arthur Simarro, Guilherme Alves, Heitor Camilo, Matheus Marques, Pedro Couto">
+    <meta name = "reply-to" content = "guilherme.alves@estudante.iftm.edu.br">
+    <meta name = "generator" content = "Visual Studio Code">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        .botao{
+            background-color: transparent;
+            color: white;
+            background-color: rgba(133, 206, 182, 0.694);
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.144);
+            padding: 10px;
+            width: fit-content;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 1s;
+            transform: scale(1.1);
+        }
+        .botao:hover{
+            transform: scale(1.03);
+            background-color: rgba(114, 170, 152, 0.694);
+        }
+        .topo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .conteudo2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }  
+        .tudo{
+            margin-top: 100px;
+            background-color: rgb(255, 255, 255);
+            backdrop-filter: blur(10px);
+            width: 70%;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.151);
+        }
+        .conteudo{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: rgb(0, 0, 0);
+            margin-top: 60px;
+        }
+        .cont1{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.116);
+            align-items: center;
+            padding: 10px;
+            transition: all 0.7s;
+            cursor: pointer;
+            border-color: rgb(255, 255, 255);
+        }
+        .icone{
+            width: 120px;
+            margin: auto;
+        }
+        .cont1 div{
+            text-align: center;
+        }
+        .menu1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .menu1 h1{
+            color: rgb(94, 129, 122);
+        }
+        .menu1 ul{
+            width: 100%;
+            list-style-type: none;
+            display:flex;
+            justify-content: end;
+            gap: 50px;
+        }
+        .imagems{
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+        }
+        .linha1{
+            border-radius: 50px;
+            width: 90%;
+            margin: auto;
+            border: solid 1px rgba(128, 128, 128, 0.199);
+            margin-bottom: 20px;
+        }
+        .cont1:hover{
+            transform: scale(1.05);
+            box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.144);
+        }
+        .menu1 li{
+            position: relative;
+            cursor: pointer;
+        }
+        .menu1 li::after{
+            position: absolute;
+            content: '';
+            width: 0%;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background-color: rgba(129, 167, 201, 0.582);
+            transition: all 0.7s;
+            border-radius: 60px;
+        }
+        .menu1 li:hover::after{
+            width: 30%;
+            left: 70%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .imagem_sobre_pilates{
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudo">
+        <div class="menu1">
+            <h1>Pilates</h1>
+            <img src="logo.png" class="imagem_sobre_pilates">
+        </div>
+        <hr class="linha1">
+        <br>
+        <div class="topo">
+            <div class="botao"><a href="home.html">entrar</a></div>
+    </div>
+
+        <br><br>
+        <!--Começo de outro negócio-->
+        <div class="conteudo">
+            <div class="cont1">
+            <img src="flexibilidade.png" class="icone">
+            <div>
+                <h2>Aumento da flexibilidade</h2>
+                <hr>
+                <p>
+                    O Pilates ajuda a melhorar a flexibilidade e a mobilidade do corpo, o que pode reduzir a rigidez muscular.
+                </p>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="peso.png" class="icone">
+            <div>
+                <h2>Fortalecimento do core</h2>
+                <hr>
+                <p>
+                    O Pilates foca no fortalecimento do core, ou seja, dos músculos abdominais, lombares e pélvicos, proporcionando maior estabilidade e postura.
+                </p>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="meditando.png" class="icone">
+            <div>
+                <h2>Melhora da postura</h2>
+                <hr>
+                <p>
+                    Com a prática regular de Pilates, você aprende a alinhar corretamente seu corpo, o que melhora a postura e reduz dores nas costas.  
+                </p>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="paz.png" class="icone">
+            <div>
+                <h2>Redução do estresse</h2>
+                <hr>
+                <p>
+                    A prática de Pilates envolve respiração controlada e movimento consciente, o que ajuda a reduzir o estresse.
+                </p>
+            </div>
+        </div>
+        </div>
+       
+
+
+       
+    </div>
+   
+</body>
+
+
+</html>
+
+
+
